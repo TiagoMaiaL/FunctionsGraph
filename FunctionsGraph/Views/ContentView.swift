@@ -10,7 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            CartesianPlane()
+            Group {
+                Point()
+            }
+        }
     }
 }
 

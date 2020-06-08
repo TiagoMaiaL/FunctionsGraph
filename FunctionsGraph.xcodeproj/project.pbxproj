@@ -13,6 +13,8 @@
 		4776381E248D933D00E66215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4776381D248D933D00E66215 /* Assets.xcassets */; };
 		47763821248D933D00E66215 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47763820248D933D00E66215 /* Preview Assets.xcassets */; };
 		47763824248D933D00E66215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47763822248D933D00E66215 /* LaunchScreen.storyboard */; };
+		47763830248D98EE00E66215 /* CartesianPlane.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4776382F248D98EE00E66215 /* CartesianPlane.swift */; };
+		47763838248DBA1100E66215 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47763837248DBA1100E66215 /* Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		47763820248D933D00E66215 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47763823248D933D00E66215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47763825248D933D00E66215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4776382F248D98EE00E66215 /* CartesianPlane.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartesianPlane.swift; sourceTree = "<group>"; };
+		47763837248DBA1100E66215 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,8 @@
 		47763816248D933600E66215 /* FunctionsGraph */ = {
 			isa = PBXGroup;
 			children = (
-				47763817248D933600E66215 /* AppDelegate.swift */,
-				47763819248D933600E66215 /* SceneDelegate.swift */,
-				4776381B248D933600E66215 /* ContentView.swift */,
-				4776381D248D933D00E66215 /* Assets.xcassets */,
-				47763822248D933D00E66215 /* LaunchScreen.storyboard */,
-				47763825248D933D00E66215 /* Info.plist */,
+				4776382E248D985900E66215 /* Supporting Files */,
+				4776382B248D982E00E66215 /* Views */,
 				4776381F248D933D00E66215 /* Preview Content */,
 			);
 			path = FunctionsGraph;
@@ -73,6 +73,28 @@
 				47763820248D933D00E66215 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4776382B248D982E00E66215 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4776381B248D933600E66215 /* ContentView.swift */,
+				4776382F248D98EE00E66215 /* CartesianPlane.swift */,
+				47763837248DBA1100E66215 /* Point.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4776382E248D985900E66215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47763817248D933600E66215 /* AppDelegate.swift */,
+				47763819248D933600E66215 /* SceneDelegate.swift */,
+				4776381D248D933D00E66215 /* Assets.xcassets */,
+				47763822248D933D00E66215 /* LaunchScreen.storyboard */,
+				47763825248D933D00E66215 /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +113,8 @@
 			dependencies = (
 			);
 			name = FunctionsGraph;
+			packageProductDependencies = (
+			);
 			productName = FunctionsGraph;
 			productReference = 47763814248D933600E66215 /* FunctionsGraph.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +143,8 @@
 				Base,
 			);
 			mainGroup = 4776380B248D933600E66215;
+			packageReferences = (
+			);
 			productRefGroup = 47763815248D933600E66215 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,6 +173,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				47763818248D933600E66215 /* AppDelegate.swift in Sources */,
+				47763838248DBA1100E66215 /* Point.swift in Sources */,
+				47763830248D98EE00E66215 /* CartesianPlane.swift in Sources */,
 				4776381A248D933600E66215 /* SceneDelegate.swift in Sources */,
 				4776381C248D933600E66215 /* ContentView.swift in Sources */,
 			);
@@ -288,7 +316,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FunctionsGraph/Preview Content\"";
 				DEVELOPMENT_TEAM = 79964U8894;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FunctionsGraph/Info.plist;
+				INFOPLIST_FILE = "FunctionsGraph/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FunctionsGraph/Preview Content\"";
 				DEVELOPMENT_TEAM = 79964U8894;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = FunctionsGraph/Info.plist;
+				INFOPLIST_FILE = "FunctionsGraph/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
